@@ -1,15 +1,19 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="icon" href="{% static 'image/logo.png' %}" type="image/png">
     <title>Sahil Patil Portfolio</title>
 </head>
+
 <body>
     <!-- Header Section -->
     <header class="header">
@@ -28,33 +32,12 @@
             <a href="#contact">Contact</a>
             <a href="https://github.com/sa433"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.linkedin.com/in/sahilpatil-2904/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#" class="btn">Resume</a>
+            <a href="{% static 'file/Sahil_Resume.pdf' %}" class="btn">Resume</a>
         </nav>
 
     </header>
 
     <!-- Home Section -->
-     <!-- <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hey, Myself</h3>
-            <h1>Sahil Patil</h1>
-            <h3>I am <span> Backend Developer </span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla quidem possimus tenetur id numquam repudiandae reiciendis, pariatur cumque maiores laudantium.</p>
-
-            <div class="social-media">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-
-            <a href="#" class="btn">Download CV</a>
-        </div>
-
-        <div class="home-img">
-            <img src="/static/image/Profile.jpg" alt="" >
-        </div>
-     </section> -->
     <section id="home-section">
         <img src="/static/image/bg3.jpg" alt="Laptop Image" class="laptop-image">
         <div class="home-content">
@@ -62,10 +45,10 @@
             <h3>Sahil Patil</span></h3>
             <h3>I am <span class="multiple-text"> Backend Developer </span></span></h3>
         </div>
-    </section> 
+    </section>
 
     <!-- About Section -->
-     <section id="about">
+    <section id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
@@ -73,7 +56,10 @@
                 </div>
                 <div class="about-col-2">
                     <h2 class="headinng">About <span>Me</span></h2>
-                    <p class="about-p">I'm Python Developer with 1.6 years of experience in crafting efficient web scrapers. Leveraging these scrapers, I optimize applications in Django, enhancing performance and functionality. My expertise also extends to Django Rest Framework (DRF) and data analysis using Python libraries like Pandas. Continuously refining my skills.</p>
+                    <p class="about-p">I'm Python Developer with 1.6 years of experience in crafting efficient web
+                        scrapers. Leveraging these scrapers, I optimize applications in Django, enhancing performance
+                        and functionality. My expertise also extends to Django Rest Framework (DRF) and data analysis
+                        using Python libraries like Pandas. Continuously refining my skills.</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
@@ -82,47 +68,69 @@
                     </div>
                     <div class="tab-contents active-tab" id="experience">
                         <ul>
-                            <li><span>07/2022 to 01/2024</span><br><p class="span-p">Associate Python Developer</p></li>
-                            <li><span>10/2021 to 01/2022</span><br><p class="span-p">Django Developer Intern</p></li>
-                            <li><span>06/2021 to 10/2021</span><br><p class="span-p">Python Developer Intern</p></li>
+                            <li><span>07/2022 to 01/2024</span><br>
+                                <p class="span-p">Associate Python Developer</p>
+                            </li>
+                            <li><span>10/2021 to 01/2022</span><br>
+                                <p class="span-p">Django Developer Intern</p>
+                            </li>
+                            <li><span>06/2021 to 10/2021</span><br>
+                                <p class="span-p">Python Developer Intern</p>
+                            </li>
                         </ul>
                     </div>
                     <div class="tab-contents " id="skills">
                         <ul>
-                            <li><span>Python/Django</span><br><p class="span-p">Django Celery (AsynchronousTask)</p></li>
-                            <li><span>Django RestFramework</span><br><p class="span-p">Database Management(SQL, MYSQL, MongoDB)</p></li>
-                            <li><span>HTML CSS JS</span><br><p class="span-p">Git, (Github), Docker, AWS Services</p></li>
+                            <li><span>Python/Django</span><br>
+                                <p class="span-p">Django Celery (AsynchronousTask)</p>
+                            </li>
+                            <li><span>Django RestFramework</span><br>
+                                <p class="span-p">Database Management(SQL, MYSQL, MongoDB)</p>
+                            </li>
+                            <li><span>HTML CSS JS</span><br>
+                                <p class="span-p">Git, (Github), Docker, AWS Services</p>
+                            </li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2017-2021</span><br><p class="span-p">BE (Computer Science)</p></li>
-                            <li><span>2015-2017</span><br><p class="span-p">Higher School</p></li>
-                            <li><span>2014-2015</span><br><p class="span-p">School</p></li>
+                            <li><span>2017-2021</span><br>
+                                <p class="span-p">BE (Computer Science)</p>
+                            </li>
+                            <li><span>2015-2017</span><br>
+                                <p class="span-p">Higher School</p>
+                            </li>
+                            <li><span>2014-2015</span><br>
+                                <p class="span-p">School</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
 
             </div>
         </div>
-     </section>
+    </section>
 
     <!-- Project Section -->
-     <section class="services" id="projects">
+    <section class="services" id="projects">
         <h2 class="headinng">My <span>Projects</span></h2>
 
         <div class="services-container">
             <div class="services-box">
                 <i class="fa-brands fa-github"></i>
                 <h3>Authentication System using Django JWT</h3>
-                <p>This project implements a robust authentication system using Django and JSON Web Tokens (JWT). It includes user registration that generates a token, secure login, password reset, change passwords.</p>
-                <a href="https://github.com/sa433/Authentication-System-using-Django-JWT.git"  target=”_blank” class="btn">Code</a>
+                <p>This project implements a robust authentication system using Django and JSON Web Tokens (JWT). It
+                    includes user registration that generates a token, secure login, password reset, change passwords.
+                </p>
+                <a href="https://github.com/sa433/Authentication-System-using-Django-JWT.git" target=”_blank”
+                    class="btn">Code</a>
             </div>
 
             <div class="services-box">
                 <i class="fa-brands fa-github"></i>
                 <h3>Django-CRUD</h3>
-                <p>The project involves developing a Django application to manage ATM site data, allowing users to upload and manage site data via an Excel file and interface. </p>
+                <p>The project involves developing a Django application to manage ATM site data, allowing users to
+                    upload and manage site data via an Excel file and interface. </p>
                 <a href="https://github.com/sa433/ATM_sites.git" target=”_blank” class="btn">Code</a>
             </div>
 
@@ -133,18 +141,22 @@
                     endpoints for user registration, login, and data retrieval functionalities.</p>
                 <a href="https://github.com/sa433/magic.git" target=”_blank” class="btn">Code</a>
             </div>
-            
+
             <div class="services-box">
                 <i class="fa-brands fa-github"></i>
                 <h3>Scrape with Python Django Celery</h3>
-                <p>This project demonstrates how to use Django and Celery for asynchronous web scraping tasks. The example involves scraping book details (title, price, and product link) from a website and saving them to a Django model.</p>
-                <a href="https://github.com/sa433/Scrape-with-Python-Django-Celery.git" target=”_blank” class="btn">Code</a>
+                <p>This project demonstrates how to use Django and Celery for asynchronous web scraping tasks. The
+                    example involves scraping book details (title, price, and product link) from a website and saving
+                    them to a Django model.</p>
+                <a href="https://github.com/sa433/Scrape-with-Python-Django-Celery.git" target=”_blank”
+                    class="btn">Code</a>
             </div>
 
             <div class="services-box">
                 <i class="fa-brands fa-github"></i>
                 <h3>CSVFile to Django Database</h3>
-                <p>This project is designed to streamline data management by allowing users to upload CSV files and automatically import the data into a Django database.</p>
+                <p>This project is designed to streamline data management by allowing users to upload CSV files and
+                    automatically import the data into a Django database.</p>
                 <a href="https://github.com/sa433/CSVFile_to_Django_Database.git" target=”_blank” class="btn">Code</a>
             </div>
 
@@ -159,33 +171,38 @@
             <div class="services-box">
                 <i class="fa-brands fa-github"></i>
                 <h3>Resume Uploader API</h3>
-                <p>This project, built with Django Rest Framework (DRF) using class-based views, enables users to upload and manage resumes through a streamlined API interface.</p>
+                <p>This project, built with Django Rest Framework (DRF) using class-based views, enables users to upload
+                    and manage resumes through a streamlined API interface.</p>
                 <a href="https://github.com/sa433/ResumeUploaderAPI.git" target=”_blank” class="btn">Code</a>
             </div>
 
             <div class="services-box">
                 <i class="fa-brands fa-github"></i>
                 <h3>Session Authentication using DRF</h3>
-                <p>This project enhances security by implementing CSRF protection and generating unique session IDs and tokens upon user login. </p>
+                <p>This project enhances security by implementing CSRF protection and generating unique session IDs and
+                    tokens upon user login. </p>
                 <a href="https://github.com/sa433/magic.git" target=”_blank” class="btn">Code</a>
             </div>
 
             <div class="services-box">
                 <i class="fa-brands fa-github"></i>
                 <h3>Resume Uploader</h3>
-                <p>This project is a web application that allows users to upload and view resumes.<p>
-                <a href="https://github.com/sa433/resumeupload.git" target=”_blank” class="btn">Code</a>
+                <p>This project is a web application that allows users to upload and view resumes.
+                <p>
+                    <a href="https://github.com/sa433/resumeupload.git" target=”_blank” class="btn">Code</a>
             </div>
 
             <div class="services-box">
                 <i class="fa-brands fa-github"></i>
                 <h3>Olympic Data Analysis</h3>
-                <p>This project aims to analyze and visualize trends in the Olympic Games. By applying data cleaning, statistical analysis, and visualization techniques, this project aims to uncover insights into athletes' achievements & many more.</p>
+                <p>This project aims to analyze and visualize trends in the Olympic Games. By applying data cleaning,
+                    statistical analysis, and visualization techniques, this project aims to uncover insights into
+                    athletes' achievements & many more.</p>
                 <a href="https://github.com/sa433/Olympic-Data-Analysis.git" target=”_blank” class="btn">Code</a>
             </div>
 
         </div>
-     </section>
+    </section>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
@@ -203,10 +220,10 @@
                 <input type="text" name="sub" placeholder="Email Subject">
             </div>
 
-            <textarea name="email_msg"  cols="30" rows="10" placeholder="Enter your Message"></textarea>
+            <textarea name="email_msg" cols="30" rows="10" placeholder="Enter your Message"></textarea>
             <input type="submit" value="Send" class="btn">
         </form>
-        
+
         {% if msg %}
         <p id="message">{{ msg }}</p>
         {% endif %}
@@ -224,4 +241,5 @@
 
     <script src="/static/js/scripts.js"></script>
 </body>
+
 </html>
